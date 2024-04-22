@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Genel Stil */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background-color: #b1c2ba;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    color: #00000078;
+    padding: 10px;
+    text-align: right;
+    font-family:'Times New Roman', Times, serif;
+    position: relative;
+}
+
+.header-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('orm.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+    z-index: -1; /* Header'ın arkasında kalmasını sağlar */
+}
+
+header h1 {
+    font-size: 90px; /* veya istediğiniz boyut */
+    margin-top: 40px;
+    margin-right: 40px; /* Sağa doğru boşluk */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 120px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+header img {
+    width: 179px; /* Logo genişliği */
+    height: auto; /* Otomatik yükseklik ayarı */
+    position: absolute; /* Mutlak konumlandırma */
+    top: -170px; /* Yukarıdan 20 piksel mesafe */
+    left: 50px; /* Soldan 30 piksel mesafe */
+}
+
+.content {
+    font-size: 16px; /* Metin boyutunu ayarla */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: left; /* Metni sola hizala */
+    color: white; /* Metin rengini beyaz yap */
+}
+
+
+.sidebarsa {
+    background: #d1d0d0c2;
+    padding: 200px;
+    width: 780px;
+    height: 90px;
+    float: right;
+    overflow-y: auto; /* Dikey scrollbar ekle */
+    border-top-left-radius: 10px;
+    padding-right: 150px;
+}
+
+.sidebarsa-text {
+    padding: 100px;
+    font-family: 'Courier New', Courier, monospace;
+
+    width: 440px; /* Kutunun genişliği */
+    height: 100px; /* Kutunun yüksekliği */
+    font-size: 16px; /* Metin boyutunu ayarla */
+    color: #181616; /* Metin rengini belirle */
+    margin-top: 50px; /* Metnin üst boşluğunu ayarla */
+    padding: 10px; /* Metnin iç boşluğunu ayarla */
+    border-radius: 5px; /* Köşeleri yuvarlak yap */
+    margin-top: -200px;
+}
+
+.button-container {
+    display: flex; /* Flex konteyner oluştur */
+    flex-direction: column; /* Dikey yönde sırala */
+    align-items: center; /* Dikeyde ortala */
+    margin-top: -90px;
+    margin-left: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+}
+
+.sidebar {
+    background: #636363d9;
+    padding: 190px; /* Örnek bir padding değeri */
+    width: 80px; /* Sidebar genişliği */
+    height: 400px;
+    float: left;
+    overflow-y: auto; /* Dikey scrollbar ekle */
+    border-top-right-radius: 10px;
+    box-sizing: border-box; /* Padding ve border değerlerini genişlik ve yüksekliğe dahil et */
+}
+
+.active {
+    background-color: rgb(141, 120, 143); /* Mor arka plan rengi */
+    color: white; /* Metin rengi */
+    font-size: 200%; /* Yazı tipi boyutu */
+}
+
+
+
+
+nav ul li a:hover {
+    background-color: rgb(141, 120, 143); /* Mor arka plan rengi */
+    color: white; /* Metin rengi */
+    font-size: 200%; /* Yazı tipi boyutu */
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Genel Stil */
+body {
+    font-family:'Courier New', Courier, monospace;
+    line-height: 1.5;
+    background-color: #181919d8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    color: #00000078;
+    padding: 10px;
+    text-align: right;
+    font-family:'Times New Roman', Times, serif;
+    position: relative;
+}
+
+.header-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('orm.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+    z-index: -1; /* Header'ın arkasında kalmasını sağlar */
+}
+
+
+.label {
+    font-size: 80px; /* veya istediğiniz boyut */
+    margin-top: 70px;
+}
+
+.container {
+    text-align: center;
+    margin-top: 70px;
+    margin-left: 530px; /* Sağa doğru 100 piksel kaydır */
+    
+}
+
+
+textarea {
+    resize: none; /* Kullanıcının boyutlandıramayacağı şekilde mesaj kutusunun boyutunu sabitle */
+}
+
+input[type="email"],
+textarea {
+    padding: 10px; /* Alan içeriğini yükseltmek için */
+    border: 2px solid #fff; /* Beyaz kenarlık oluştur */
+    border-radius: 5px; /* Yumuşak kenarlar için */
+    background-color: rgba(255, 255, 255, 0.1); /* Hafif bir beyaz arka plan */
+    color: #fff; /* Metin rengi */
+    margin-bottom: 10px; /* Alanlar arasındaki boşluğu artır */
+}
+
+input[type="message"],
+textarea {
+    padding: 10px; /* Alan içeriğini yükseltmek için */
+    border: 2px solid #fff; /* Beyaz kenarlık oluştur */
+    border-radius: 5px; /* Yumuşak kenarlar için */
+    background-color: rgba(255, 255, 255, 0.1); /* Hafif bir beyaz arka plan */
+    color: #fff; /* Metin rengi */
+    margin-bottom: 10px; /* Alanlar arasındaki boşluğu artır */
+}
+.input-group {
+    display: flex; /* Kutuları yatay olarak hizala */
+    align-items:self-start;/* Kutuları dikey olarak hizala */
+}
+
+.container {
+    display: flex; /* Kutuları yatay olarak sırala */
+    justify-content: flex-start; /* Kutuları sola hizala */
+}
+.input-group label {
+    margin-right: 20px; /* Sağa doğru boşluk ekleyerek sola kaydır */
+}
+
+
+h2 {
+    font-size: 80px; /* veya istediğiniz boyut */
+    margin-top: 90px;
+    margin-left: 340px; /* Sağa doğru boşluk */
+    color: #282626;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 1.5); /* Metnin etrafına beyaz çerçeve */
+
+}   
+
+.form-container {
+    display:block;
+    align-items: flex-start;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+
+
+button {
+    align-self:baseline;
+    padding: 13px 13px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 15px;
+    margin-right: -260px;
+    margin-top: -10px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+
+
+label {
+    padding: 2px; /* Çerçeve içindeki içeriği biraz yükseltmek için */
+    border: 1px solid #575555; /* Beyaz çerçeve oluştur */
+    border-radius: 5px; /* Yumuşak kenarlar için */
+    display: inline-block; /* Etiketleri yan yana yerleştirmek için */
+    
+}
+
